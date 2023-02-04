@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const deviceController_1 = require("../Controller/deviceController");
+const deviceRoute = (0, express_1.Router)();
+deviceRoute.route("/getall").get(deviceController_1.getAllDevice);
+deviceRoute.route("/post/:id").post(deviceController_1.postDevice);
+deviceRoute.route("/query").get(deviceController_1.getAll_P_or_B);
+deviceRoute.route("/update/:id").patch(deviceController_1.updateDevice);
+deviceRoute.route("/getone/:id").get(deviceController_1.getOneDevice);
+deviceRoute.route("/deleteall").delete(deviceController_1.deleteAll);
+exports.default = deviceRoute;
