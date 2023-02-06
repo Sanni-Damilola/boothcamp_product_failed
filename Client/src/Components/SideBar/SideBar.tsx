@@ -4,12 +4,9 @@ import Header from "../Header/Header";
 import { FaCarBattery } from "react-icons/fa";
 import { GrProductHunt } from "react-icons/gr";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
-import Routes from "../Routes/Routes";
 import { Link } from "react-router-dom";
 import MobileHeader from "../Header/MobileHeader";
-
-
-
+import Routes from "../Routes/Routes";
 
 const SideBar = () => {
   return (

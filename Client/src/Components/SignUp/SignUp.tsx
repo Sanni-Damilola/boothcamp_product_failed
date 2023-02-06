@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { accessContest } from "../Global/GlobalContext";
 
 const SignUp = () => {
   const [show, setShow] = useState(false);
@@ -16,7 +15,6 @@ const SignUp = () => {
   const [name, setName] = useState("");
 
   const navigate = useNavigate();
-
 
   const registerUser = async (e: any) => {
     e.preventDefault();

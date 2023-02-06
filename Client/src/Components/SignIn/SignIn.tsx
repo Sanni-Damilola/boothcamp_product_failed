@@ -16,7 +16,7 @@ const SignIn = () => {
       .post("https://bootcamp-47qt.onrender.com/api/login", { email })
       .then((res) => {
         window.localStorage.setItem("userData", JSON.stringify(res.data.data));
-        navigate("/p");
+        navigate("/sidebar");
         context?.setData(res.data.data);
       })
       .catch((err) => {

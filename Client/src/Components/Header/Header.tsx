@@ -24,7 +24,7 @@ const Header = () => {
   const postDeviceToDataBase = async () => {
     await axios
       .post(
-        `https://bootcamp-47qt.onrender.com/api/post/${context?.data._id}`,
+        `https://bootcamp-47qt.onrender.com/api/post/${context?.data!._id}`,
         {
           ticketNumber,
           position,
@@ -35,8 +35,6 @@ const Header = () => {
         console.log("from header", res);
       });
   };
-
-  console.log("context", context?.data._id);
 
   return (
     <Container>
@@ -72,7 +70,7 @@ const Header = () => {
               onChange={(e) => {
                 setPostDevice(e.target.value);
               }}
-              placeholder="post a device"
+              placeholder="post a ticket number"
               type={"text"}
             />{" "}
             <Input

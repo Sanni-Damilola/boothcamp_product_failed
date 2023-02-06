@@ -18,7 +18,6 @@ const Routes = () => {
       path: "/ps",
       element: <Personal />,
     },
-    
   ]);
 
   return element;
